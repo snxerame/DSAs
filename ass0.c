@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<string.h>
 int main()
 {
     //initialization and input 
@@ -17,7 +18,7 @@ int main()
     //fulladder
     for(int i=0;i<lenB;i++)
     {
-       int digit = a[lenA-i-1] + b[lenB-i-1]+carry -96 ;
+       int digit = a[lenA-i-1] + b[lenB-i-1] + carry -96 ;
        
       if(digit>9)
        {
@@ -32,7 +33,7 @@ int main()
     //halfadder
     for(int j=lenB;j<lenA;j++)
     {
-        int digit = a[lenA-j-1]+carry -48 ;
+        int digit = a[lenA-j-1] + carry - 48 ;
       if(digit>9)
        {
            digit = digit -10;
